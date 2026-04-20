@@ -1,0 +1,13 @@
+"@context": "https://foral-project.github.io/protocol/context/v1/catalog.jsonld"
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-project
+  description: "TODO: Adicione uma descrição do projeto."
+  annotations:
+    foral.dev/archetype: application
+  tags: []
+spec:
+  type: service
+  lifecycle: experimental
+  owner: my-org

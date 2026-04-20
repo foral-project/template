@@ -1,0 +1,16 @@
+# Foral Validation — gerado pelo template foral-project/template.
+# Consome reusable workflows do foral-project/governance.
+# Documentação: https://github.com/foral-project/governance/blob/main/ADOPTING.md
+name: Foral Validation
+
+on: [push, pull_request]
+
+jobs:
+  catalog:
+    uses: foral-project/governance/.github/workflows/validate-catalog.yml@main
+
+  naming:
+    uses: foral-project/governance/.github/workflows/validate-naming.yml@main
+
+  commits:
+    uses: foral-project/governance/.github/workflows/validate-conventional.yml@main
